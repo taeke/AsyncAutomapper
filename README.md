@@ -44,11 +44,16 @@ The trick is to use convertToType and provide a then function in this class for 
 ```
 
 #Install and try this thing
+
+```
+
 npm install
 bower install
 tsd install
 tsd link
 gulp
 gulp
+
+```
 
 Yes the first time gulp seems to fail. Op index.html in the browser to see this thing work.
