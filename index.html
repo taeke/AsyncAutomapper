@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <title>Automapper Async Test</title>
+	  <script src="./bower_components/arcady-automapper/dist/automapper.min.js"></script>
+	  <script src="./bower_components/underscore/underscore-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-mocks.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-resource.js"></script>
+    <script src="./src/js/App.js"></script>
+    <script src="./src/js/MapBase.js"></script>
+    <script src="./src/js/BaseService.js"></script>
+    <script src="./src/js/HateoasService.js"></script>
+    <script src="./src/js/PersonsController.js"></script>
+  </head>
+  <body>
+    <div ng-controller="personsController as personsList">
+      <ul>
+        <li ng-repeat="person in personsList.persons">{{person.name}}  <button ng-click="personsList.detailsClick(person)">Details</button></li>
+      </ul>
+      <h1>Details:</h1>
+      <table>
+        <tr>
+           <th width=200>Name</th><th>Street</th>
+        </tr>
+        <tr>
+           <th width=200>{{personsList.currentPerson.name}}</th><th>{{personsList.currentPerson.address.street}}</th>
+        </tr>
+      </table>
+    </div>  
+  </body>
+</html>

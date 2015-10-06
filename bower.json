@@ -1,0 +1,16 @@
+{
+  "name": "AutoAsyncMapper",
+  "version": "0.0.0",
+  "authors": [
+    "taeke <taekevdv@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "arcady-automapper": "~1.3.0",
+    "underscore": "~1.8.3"
+  }
+}
