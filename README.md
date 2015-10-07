@@ -25,7 +25,7 @@ var objA: IPersonDto = {
 
 ```
 
-If you would like to map objA on to IPersonDto you will find there is a little challenge because you need to wait for the async result 
+If you would like to map objA on to IPerson you will find there is a little challenge because you need to wait for the async result 
 from the restfull endpoint /api/address/1 to map the address. 
 
 The trick is to use convertToType and provide a then function in this class for the mapping.
